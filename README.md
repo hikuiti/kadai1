@@ -43,7 +43,7 @@ $ echo 0 > /dev/myled0
 このコマンドによってLEDの光を消します。
 
 # 動画
-https://youtu.be/AeP_80_LSAQ
+https://youtu.be/lsic9aX-Dgg
 
 youtubeに動画を上げてあります。
 
