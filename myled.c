@@ -1,7 +1,7 @@
 /*
  * myled.c
  *
- * Copyright (C) 2019 Takeru Ogata <s18C1025EA@s.chibakoudai.jp>
+ * Copyright (C) 2022 Takeru Ogata <s18C1025EA@s.chibakoudai.jp>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
