@@ -21,19 +21,26 @@ Raspberry Pi 400 GPIOピン配置
 
 # 前準備
 $ make
+
 $ sudo insmod myled.ko
+
 $ sudo chmod 666 /dev/myled0
 
 # 実行
 $ echo 1 > /dev/myled0
+
 このコマンドによってLEDが光り続けます。
+
 $ echo 0 > /dev/myled0
+
 このコマンドによってLEDの光を消します。
 
 # 動画
 https://youtu.be/AeP_80_LSAQ
+
 youtubeに動画を上げてあります。
 
 # 参考リンク
 GPIOピン配置
+
 https://www.bioerrorlog.work/entry/raspberry-pi-pinout
