@@ -14,6 +14,7 @@ LED(白)×1
 
 # 回路
 Raspberry Pi 400 GPIOピン配置
+
 ![20210821150645](https://user-images.githubusercontent.com/95558214/149341948-528e38e4-29be-4e05-8a4b-0754422b69d0.png)
 今回はLEDもアノード側をGPIOの25番に、カソード側をGPIOの39番に差し込んでいます。
 
