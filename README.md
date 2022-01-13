@@ -2,20 +2,24 @@
 ロボットシステム学にて使ったデバイスドライバ
 
 # 内容
-ロボットシステム学第7~8回にて製作したデバイスドライバーです。
+ロボットシステム学にて作成したプログラムです。
 
-講義で製作した物と動きは一致していますが、少しプログラムを書き換えています。具体的には、77行目の「ioremap_nocache」の部分を「ioremap」に変えています。
+右から順番に点灯するようにプログラムされています。
 
 # 必要な物
 Raspberry Pi 400
 
 ブレッドボード×1
 
-ジャンパー線×2
+ジャンパー線×7
 
-抵抗(φ5)×1
+抵抗(φ5)×3
 
 LED(白)×1
+
+LED(赤)×1
+
+LED(黄)×1
 
 40pin I/O Protector ×1
 
@@ -24,23 +28,36 @@ Raspberry Pi 400 GPIOピン配置
 
 ![20210821150645](https://user-images.githubusercontent.com/95558214/149341948-528e38e4-29be-4e05-8a4b-0754422b69d0.png)
 
-今回はLEDもアノード側をGPIOの25番に、カソード側をGPIOの39番に差し込んでいます。
+今回のLEDの配置は、
+
+GPIO25 > 22ピン > 赤色LED
+
+GPIO21 > 40ピン > 白色LED
+
+GPIO20 > 38ピン > 黄色LED
+
+の後、すべてをGND(39ピン)につなげています。
+
+
 
 # 前準備
-$ make
+$ make 
 
-$ sudo insmod myled.ko
+$ sudo insmod myled.ko 
 
-$ sudo chmod 666 /dev/myled0
+$ sudo chmod 666 /dev/myled0 
+
+$ chmod +x blink.py 
+
+$ python blink.py
+
 
 # 実行
-$ echo 1 > /dev/myled0
+$ python blink.py　を実行した際に点滅を始めます。
 
-このコマンドによってLEDが光り続けます。
+ctrl + c を押すと停止します。
 
-$ echo 0 > /dev/myled0
 
-このコマンドによってLEDの光を消します。
 
 # 動画
 https://youtu.be/lsic9aX-Dgg
@@ -52,5 +69,8 @@ GPIOピン配置
 
 https://www.bioerrorlog.work/entry/raspberry-pi-pinout
 
+https://github.com/yurinishio1139/myled
 
-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
+# ライセンス
+[GNU General Public License v3.0](https://github.com/hikuiti/kadai1/blob/main/LICENSE)
+
