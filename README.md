@@ -51,3 +51,6 @@ youtubeに動画を上げてあります。
 GPIOピン配置
 
 https://www.bioerrorlog.work/entry/raspberry-pi-pinout
+
+
+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
