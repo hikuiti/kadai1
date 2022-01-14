@@ -1,7 +1,7 @@
 /*
  * myled.c
  *
- * Copyright (C) 2022 Takeru Ogata <s18C1025EA@s.chibakoudai.jp 
+ * Copyright (C) 2022 Takeru Ogata <s18C1025EA@s.chibakoudai.jp> 
  */
 
 
@@ -12,7 +12,7 @@
 #include <linux/uaccess.h>
 #include <linux/io.h>
 
-MODULE_AUTHOR("Takeru Ogata");
+MODULE_AUTHOR("Takeru Ogata+ryuichi Ueda");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
